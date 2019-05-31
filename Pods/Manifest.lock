@@ -1,0 +1,47 @@
+PODS:
+  - MaterialComponents/AnimationTiming (54.5.0)
+  - MaterialComponents/Buttons (54.5.0):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Ink (54.5.0):
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (54.5.0)
+  - MaterialComponents/private/Application (54.5.0)
+  - MaterialComponents/private/Math (54.5.0)
+  - MaterialComponents/ShadowElevations (54.5.0)
+  - MaterialComponents/ShadowLayer (54.5.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/TextFields (54.5.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (54.5.0):
+    - MaterialComponents/private/Application
+  - MDFInternationalization (1.0.4)
+  - MDFTextAccessibility (1.2.0)
+
+DEPENDENCIES:
+  - MaterialComponents/Buttons
+  - MaterialComponents/TextFields
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
+
+SPEC CHECKSUMS:
+  MaterialComponents: 0d9d3090bbd67bf6d4ac2896c84cf02dfd06e3c2
+  MDFInternationalization: e355b0cebecf53d60233bd267084e49366c82513
+  MDFTextAccessibility: 94098925e0853551c5a311ce7c1ecefbe297cdb6
+
+PODFILE CHECKSUM: e3cf9470e384cdec83b75816b3e03d4945ddd67f
+
+COCOAPODS: 1.6.2
