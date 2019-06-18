@@ -96,7 +96,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 userNameController?.setErrorText("Empty user name", errorAccessibilityValue: nil)
                 userNameValid = false
             }else if(!self.isValidName(name: userName.text!)){
-                userNameController?.setErrorText("User name has characters only ,length >= 7 and <= 18", errorAccessibilityValue: nil)
+                userNameController?.setErrorText("User name has characters only ,length >= 5 and <= 26", errorAccessibilityValue: nil)
                 userNameValid = false
             }else{
                 userNameController?.setErrorText(nil, errorAccessibilityValue: nil)
@@ -107,7 +107,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 firstNameController?.setErrorText("Empty name", errorAccessibilityValue: nil)
                 firstNameValid = false
             }else if(!self.isValidName(name: firstName.text!)){
-                firstNameController?.setErrorText("Name has characters only ,length >= 7 and <= 18", errorAccessibilityValue: nil)
+                firstNameController?.setErrorText("Name has characters only ,length >= 5 and <= 26", errorAccessibilityValue: nil)
                 firstNameValid = false
             }else{
                 firstNameController?.setErrorText(nil, errorAccessibilityValue: nil)
@@ -118,7 +118,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 lastNameController?.setErrorText("Empty name", errorAccessibilityValue: nil)
                 lastNameValid = false
             }else if(!self.isValidName(name: lastName.text!)){
-                lastNameController?.setErrorText("Name has characters only ,length >= 7 and <= 18", errorAccessibilityValue: nil)
+                lastNameController?.setErrorText("Name has characters only ,length >= 5 and <= 26", errorAccessibilityValue: nil)
                 lastNameValid = false
             }else{
                 lastNameController?.setErrorText(nil, errorAccessibilityValue: nil)
@@ -140,7 +140,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 passwordController?.setErrorText("Password length must be at least 8", errorAccessibilityValue: nil)
                 passwordValid = false
             }else if(!self.isValidPassword(password: password.text!)){
-                passwordController?.setErrorText("Password has characters ,sympols and numbers", errorAccessibilityValue: nil)
+                passwordController?.setErrorText("Must have Uppercase, Lowercase, Number and Special Character", errorAccessibilityValue: nil)
                 passwordValid = false
             }else{
                 passwordController?.setErrorText(nil, errorAccessibilityValue: nil)
@@ -163,12 +163,12 @@ class ViewController: UIViewController , UITextFieldDelegate {
 
     }
     func isValidName(name:String) -> Bool {
-        let regexExp = "\\w{7,18}"
+        let regexExp = "(?:[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*){5,26})"
         let predicate = NSPredicate(format: "SELF MATCHES %@", regexExp)
         return predicate.evaluate(with: name)
     }
     func isValidPassword(password:String) -> Bool {
-        let regexExp = "123456789"
+        let regexExp = "(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[d$@$!%*?&#])[A-Za-z\\dd$@$!%*?&#]{8,}"
         let predicate = NSPredicate(format: "SELF MATCHES %@", regexExp)
         return predicate.evaluate(with: password)
     }
