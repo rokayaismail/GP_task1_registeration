@@ -6,7 +6,6 @@ target 'GP_Task1_Register' do
   use_frameworks!
 
   # Pods for GP_Task1_Register
-  pod 'MaterialComponents/TextFields' '~> 83.0.1'
-  pod 'MaterialComponents/Buttons' '~> 83.0.1'
-
+  pod 'MaterialComponents'
+  pod 'SVGKit'
 end

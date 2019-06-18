@@ -1,8 +1,10 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MDFInternationalization" "${PODS_CONFIGURATION_BUILD_DIR}/MDFTextAccessibility" "${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents"
+CLANG_CXX_LANGUAGE_STANDARD = gnu++11
+CLANG_CXX_LIBRARY = libc++
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack" "${PODS_CONFIGURATION_BUILD_DIR}/MDFInternationalization" "${PODS_CONFIGURATION_BUILD_DIR}/MDFTextAccessibility" "${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents" "${PODS_CONFIGURATION_BUILD_DIR}/MotionAnimator" "${PODS_CONFIGURATION_BUILD_DIR}/MotionInterchange" "${PODS_CONFIGURATION_BUILD_DIR}/MotionTransitioning" "${PODS_CONFIGURATION_BUILD_DIR}/SVGKit"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MDFInternationalization/MDFInternationalization.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialComponents.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MDFInternationalization/MDFInternationalization.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialComponents.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MotionAnimator/MotionAnimator.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MotionInterchange/MotionInterchange.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MotionTransitioning/MotionTransitioning.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SVGKit/SVGKit.framework/Headers" $(SDKROOT)/usr/include/libxml2
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "MDFInternationalization" -framework "MDFTextAccessibility" -framework "MaterialComponents"
+OTHER_LDFLAGS = $(inherited) -l"xml2" -framework "CocoaLumberjack" -framework "CoreGraphics" -framework "CoreText" -framework "MDFInternationalization" -framework "MDFTextAccessibility" -framework "MaterialComponents" -framework "MotionAnimator" -framework "MotionInterchange" -framework "MotionTransitioning" -framework "QuartzCore" -framework "SVGKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

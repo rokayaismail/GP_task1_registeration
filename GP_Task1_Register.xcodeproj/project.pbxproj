@@ -3,13 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2F62C462AA9E7D570E0B6F20 /* Pods_GP_Task1_Register.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8954CDE58383238FB64F52D7 /* Pods_GP_Task1_Register.framework */; };
+		79E2C8D722B7914B0029E9A1 /* baseline_radio_button_unchecked_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E2C8D522B7914A0029E9A1 /* baseline_radio_button_unchecked_black_24dp.png */; };
+		79E2C8D822B7914B0029E9A1 /* baseline_radio_button_checked_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E2C8D622B7914B0029E9A1 /* baseline_radio_button_checked_black_24dp.png */; };
+		79E8CDB322B6721B00B0B020 /* AddSpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E8CDB222B6721B00B0B020 /* AddSpeakerViewController.swift */; };
+		79EF652922B70FE40029FED0 /* SpeakerTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF652822B70FE40029FED0 /* SpeakerTypeTableViewController.swift */; };
+		79EF652C22B714EB0029FED0 /* round-radio_button_checked-24px.svg in Resources */ = {isa = PBXBuildFile; fileRef = 79EF652A22B714EB0029FED0 /* round-radio_button_checked-24px.svg */; };
+		79EF652D22B714EB0029FED0 /* round-radio_button_unchecked-24px.svg in Resources */ = {isa = PBXBuildFile; fileRef = 79EF652B22B714EB0029FED0 /* round-radio_button_unchecked-24px.svg */; };
 		BA01F06222A0C2EC005C91CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01F06122A0C2EC005C91CB /* AppDelegate.swift */; };
-		BA01F06422A0C2EC005C91CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01F06322A0C2EC005C91CB /* ViewController.swift */; };
+		BA01F06422A0C2EC005C91CB /* RegisterationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01F06322A0C2EC005C91CB /* RegisterationViewController.swift */; };
 		BA01F06722A0C2EC005C91CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01F06522A0C2EC005C91CB /* Main.storyboard */; };
 		BA01F06922A0C2F3005C91CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA01F06822A0C2F3005C91CB /* Assets.xcassets */; };
 		BA01F06C22A0C2F3005C91CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01F06A22A0C2F3005C91CB /* LaunchScreen.storyboard */; };
@@ -20,10 +26,16 @@
 /* Begin PBXFileReference section */
 		3A3B9926123971B28FC9FEA8 /* Pods-GP_Task1_Register.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GP_Task1_Register.debug.xcconfig"; path = "Target Support Files/Pods-GP_Task1_Register/Pods-GP_Task1_Register.debug.xcconfig"; sourceTree = "<group>"; };
 		52632B3699CDDF8E5E29F467 /* Pods-GP_Task1_Register.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GP_Task1_Register.release.xcconfig"; path = "Target Support Files/Pods-GP_Task1_Register/Pods-GP_Task1_Register.release.xcconfig"; sourceTree = "<group>"; };
+		79E2C8D522B7914A0029E9A1 /* baseline_radio_button_unchecked_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_radio_button_unchecked_black_24dp.png; sourceTree = "<group>"; };
+		79E2C8D622B7914B0029E9A1 /* baseline_radio_button_checked_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_radio_button_checked_black_24dp.png; sourceTree = "<group>"; };
+		79E8CDB222B6721B00B0B020 /* AddSpeakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpeakerViewController.swift; sourceTree = "<group>"; };
+		79EF652822B70FE40029FED0 /* SpeakerTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerTypeTableViewController.swift; sourceTree = "<group>"; };
+		79EF652A22B714EB0029FED0 /* round-radio_button_checked-24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "round-radio_button_checked-24px.svg"; sourceTree = "<group>"; };
+		79EF652B22B714EB0029FED0 /* round-radio_button_unchecked-24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "round-radio_button_unchecked-24px.svg"; sourceTree = "<group>"; };
 		8954CDE58383238FB64F52D7 /* Pods_GP_Task1_Register.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GP_Task1_Register.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA01F05E22A0C2EC005C91CB /* GP_Task1_Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GP_Task1_Register.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA01F06122A0C2EC005C91CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA01F06322A0C2EC005C91CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA01F06322A0C2EC005C91CB /* RegisterationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationViewController.swift; sourceTree = "<group>"; };
 		BA01F06622A0C2EC005C91CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA01F06822A0C2F3005C91CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA01F06B22A0C2F3005C91CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,14 +86,20 @@
 		BA01F06022A0C2EC005C91CB /* GP_Task1_Register */ = {
 			isa = PBXGroup;
 			children = (
+				79E2C8D622B7914B0029E9A1 /* baseline_radio_button_checked_black_24dp.png */,
+				79E2C8D522B7914A0029E9A1 /* baseline_radio_button_unchecked_black_24dp.png */,
+				79EF652A22B714EB0029FED0 /* round-radio_button_checked-24px.svg */,
+				79EF652B22B714EB0029FED0 /* round-radio_button_unchecked-24px.svg */,
 				BA01F07522A0F3C3005C91CB /* baseline-add_a_photo-24px.svg */,
 				BA01F07322A0D339005C91CB /* baseline_add_a_photo_black_48pt_3x.png */,
 				BA01F06122A0C2EC005C91CB /* AppDelegate.swift */,
-				BA01F06322A0C2EC005C91CB /* ViewController.swift */,
+				BA01F06322A0C2EC005C91CB /* RegisterationViewController.swift */,
+				79E8CDB222B6721B00B0B020 /* AddSpeakerViewController.swift */,
 				BA01F06522A0C2EC005C91CB /* Main.storyboard */,
 				BA01F06822A0C2F3005C91CB /* Assets.xcassets */,
 				BA01F06A22A0C2F3005C91CB /* LaunchScreen.storyboard */,
 				BA01F06D22A0C2F3005C91CB /* Info.plist */,
+				79EF652822B70FE40029FED0 /* SpeakerTypeTableViewController.swift */,
 			);
 			path = GP_Task1_Register;
 			sourceTree = "<group>";
@@ -155,8 +173,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA01F06C22A0C2F3005C91CB /* LaunchScreen.storyboard in Resources */,
+				79EF652C22B714EB0029FED0 /* round-radio_button_checked-24px.svg in Resources */,
 				BA01F06922A0C2F3005C91CB /* Assets.xcassets in Resources */,
+				79E2C8D822B7914B0029E9A1 /* baseline_radio_button_checked_black_24dp.png in Resources */,
+				79E2C8D722B7914B0029E9A1 /* baseline_radio_button_unchecked_black_24dp.png in Resources */,
 				BA01F07422A0D339005C91CB /* baseline_add_a_photo_black_48pt_3x.png in Resources */,
+				79EF652D22B714EB0029FED0 /* round-radio_button_unchecked-24px.svg in Resources */,
 				BA01F07622A0F3C3005C91CB /* baseline-add_a_photo-24px.svg in Resources */,
 				BA01F06722A0C2EC005C91CB /* Main.storyboard in Resources */,
 			);
@@ -188,17 +210,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GP_Task1_Register/Pods-GP_Task1_Register-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
-				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
-				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GP_Task1_Register/Pods-GP_Task1_Register-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GP_Task1_Register/Pods-GP_Task1_Register-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -212,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA01F06422A0C2EC005C91CB /* ViewController.swift in Sources */,
+				BA01F06422A0C2EC005C91CB /* RegisterationViewController.swift in Sources */,
 				BA01F06222A0C2EC005C91CB /* AppDelegate.swift in Sources */,
+				79E8CDB322B6721B00B0B020 /* AddSpeakerViewController.swift in Sources */,
+				79EF652922B70FE40029FED0 /* SpeakerTypeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
